@@ -1,7 +1,7 @@
 import streamlit as st
 
 def guessing_game():
-    secret_number = st.number_input("Enter a secret number:", min_value=1, max_value=100)
+    secret_number = st.number_input("Enter a secret number:", min_value=1, max_value=10)
     guess = st.number_input("Guess the number:")
 
     if guess == secret_number:

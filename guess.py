@@ -7,9 +7,9 @@ def guessing_game():
     if guess == secret_number:
         st.success("Congratulations! You guessed the number correctly.")
     elif guess > secret_number:
-        st.error("Your guess is too high. Try again.")
+        st.error("Your guess is higher. Try again.")
     else:
-        st.error("Your guess is too low. Try again.")
+        st.error("Your guess is lower. Try again.")
 
 def main():
     st.title("Guessing Game")
